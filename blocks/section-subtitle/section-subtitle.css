@@ -8,14 +8,13 @@
   z-index: 12;
   margin: 0 0 25px 28px;
 
-
 }
 
 
 @media screen and (max-width: 800px) {
   .section-subtitle {
-   max-width: 300px;
-   
+   max-width: 250px;
+
   }
 }
 

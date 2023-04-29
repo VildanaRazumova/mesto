@@ -21,7 +21,9 @@
 @media screen and (max-width: 800px) {
   .elements {
     max-width: 600px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: none;
+    width: 60vw;
+    justify-content: center;
 
   }
 }
@@ -30,7 +32,6 @@
 @media screen and (max-width: 425px) {
   .elements {
     margin: 36px auto 48px;
-    grid-template-columns: none;
     max-width: 282px;
 
   }

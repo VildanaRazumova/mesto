@@ -8,6 +8,20 @@
 }
 
 
+@media screen and (max-width: 800px) {
+  .profile__elements {
+    max-width: 250px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile__elements {
+    max-width: 200px;
+
+  }
+}
+
 
 @media screen and (max-width: 425px) {
   .profile__elements {
