@@ -1,0 +1,14 @@
+.element__like_active {
+  transition: 0.4s;
+
+}
+
+
+
+.element__like_active:active {
+  background-image: url(../../../../image/heart_active.svg);
+  opacity: 1;
+
+}
+
+

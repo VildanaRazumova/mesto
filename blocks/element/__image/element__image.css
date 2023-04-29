@@ -1,0 +1,25 @@
+.element__image {
+  max-width: 282px;
+  max-height: 282px;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  min-width: 100%;
+
+
+}
+
+
+@media screen and (max-width: 850px) {
+  .element__image {
+   max-width: 850px;
+
+
+
+  }
+}
+
+
+
+
+
+

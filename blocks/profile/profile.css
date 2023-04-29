@@ -1,0 +1,38 @@
+.profile {
+  max-width: 880px;
+  width: calc(100vw-400px);
+  margin: 0 auto 0;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 120px 319px 1fr 1fr;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    max-width: 750px;
+
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .profile {
+    max-width: 600px;
+    width: 100vw;
+    grid-template-columns: 120px 150px 1fr 1fr;
+
+
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .profile {
+    max-width: 282px;
+    grid-template-columns: none;
+    justify-content: center;
+
+
+  }
+}

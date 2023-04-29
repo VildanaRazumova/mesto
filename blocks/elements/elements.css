@@ -1,0 +1,37 @@
+.elements {
+  max-width: 880px;
+  margin: 51px auto 67px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 17px;
+  row-gap: 20px;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  .elements {
+    max-width: 750px;
+    grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .elements {
+    max-width: 600px;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .elements {
+    margin: 36px auto 48px;
+    grid-template-columns: none;
+    max-width: 282px;
+
+  }
+}
