@@ -1,10 +1,11 @@
 .profile {
   max-width: 880px;
-  width: calc(100vw-400px);
+  max-height: 286px;
   margin: 0 auto 0;
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: 120px 319px 1fr 1fr;
+  grid-template-columns: 120px 319px 1fr;
+
 }
 
 
@@ -18,22 +19,15 @@
 
 @media screen and (max-width: 800px) {
   .profile {
+    width: 100vw;
     max-width: 600px;
-    width: calc(100vw-100px);
-    grid-template-columns: 120px 150px 1fr 1fr;
-    justify-content: center;
-
-
   }
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .profile {
     max-width: 282px;
     grid-template-columns: none;
-    justify-content: center;
-
-
   }
 }

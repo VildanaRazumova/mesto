@@ -1,0 +1,23 @@
+.popup__item_about {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: none;
+  margin: 27px auto 0;
+  border-bottom: 1px solid rgba(1, 1, 1, .5);
+  width: 358px;
+  height: 30px;
+  padding: 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .popup__item_about {
+    width: 238px;
+    height: 14px;
+    margin: 30px auto 0;
+  }
+}

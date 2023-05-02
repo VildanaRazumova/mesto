@@ -1,0 +1,27 @@
+.popup__item_name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: none;
+  margin: 0 auto;
+  border-bottom: solid 1px #545454;
+  width: 358px;
+  height: 30px;
+  padding: 0;
+  
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .popup__item_name {
+    width: 238px;
+    height: 14px;
+
+  }
+}
+
+

@@ -1,0 +1,36 @@
+.popup {
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 111;
+  top: 0;
+  left: 0;
+  display: none;
+
+
+}
+
+
+.popup::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .popup {
+    width: 100vw;
+    margin: 0 auto;
+
+  }
+}
+
+

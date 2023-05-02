@@ -1,0 +1,21 @@
+.popup__button {
+  width: 358px;
+  background: #000000;
+  height: 50px;
+  margin: 0;
+  border: none;
+  position: absolute;
+  top: 243px;
+  left: 36px;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .popup__button {
+    width: 238px;
+    height: 46px;
+    top: 251px;
+    left: 22px;
+  }
+}
