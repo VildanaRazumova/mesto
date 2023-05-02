@@ -19,11 +19,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .section-title {}
-}
-
-
 @media screen and (max-width: 600px) {
   .section-subtitle {
     font-size: 14px;
