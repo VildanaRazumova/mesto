@@ -1,15 +1,16 @@
 .profile__elements {
   max-width: 336px;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   display: grid;
   justify-content: center;
+  min-height: 54px;
+
 }
 
 @media screen and (max-width: 600px) {
   .profile__elements {
     max-width: 282px;
-    max-height: 254px;
   }
 }
 

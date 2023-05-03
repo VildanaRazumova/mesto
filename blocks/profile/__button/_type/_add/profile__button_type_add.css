@@ -1,34 +1,27 @@
-.profile__button_add {
+.profile__button_type_add {
   width: 150px;
   height: 50px;
   margin: 0;
   align-self: center;
   justify-self: flex-end;
-  background-image: url(../../../../image/Add_Button_small.png);
+  background-image: url(../../../../../image/Add_Button_small.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: black;
-  border: none;
-  transition: 0.4s;
-  padding: 0;
-
+  cursor: pointer;
 }
 
-.profile__button_add:hover {
-  opacity: 0.6;
-
-}
 
 @media screen and (max-width: 800px) {
-  .profile__button_add {
+  .profile__button_type_add {
     height: 30px;
     width: 90px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .profile__button_add {
-    background-image: url(../../../../image/Add\ Button_big.svg);
+  .profile__button_type_add {
+    background-image: url(../../../../../image/Add\ Button_big.svg);
     grid-row: 3;
     width: 282px;
     height: 50px;

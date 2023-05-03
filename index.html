@@ -15,53 +15,53 @@
                 <section class="profile">
                     <img src="./image/avatar.jpg" alt="Фотография Жак-Ив Кусто" class="profile__avatar" />
                     <div class="profile__elements">
-                        <button type="button" class="profile__button profile__button_edit"></button>
-                        <h1 class="section-title">Жак-Ив Кусто</h1>
-                        <p class="section-subtitle">Исследователь океана</p>
+                        <button type="button" class="profile__button profile__button_type_edit"></button>
+                        <h1 class="profile__section-title">Жак-Ив Кусто</h1>
+                        <p class="profile__section-subtitle">Исследователь океана</p>
                     </div>
-                    <button type="button" class="profile__button profile__button_add"></button>
+                    <button type="button" class="profile__button profile__button_type_add"></button>
                 </section>
                 <section class="elements">
                     <article class="element">
                         <img class="element__image" src="./image/stars.jpg" alt="Фотография замка в лесу" />
                         <div class="element__text-like">
-                            <p class="element__text">Звездное небо в горах</p>
-                            <button type="button" class="element__like element__like_active"></button>
+                            <h2 class="element__text">Звездное небо в горах</h2>
+                            <button type="button" class="element__like"></button>
                         </div>
                     </article>
                     <article class="element">
                         <img class="element__image" src="./image/road.jpg" alt="Фотография дороги с высоты птичьего полета" />
                         <div class="element__text-like">
-                            <p class="element__text">Дорога</p>
-                            <button type="button" class="element__like element__like_active"></button>
+                            <h2 class="element__text">Дорога</h2>
+                            <button type="button" class="element__like"></button>
                         </div>
                     </article>
                     <article class="element">
                         <img class="element__image" src="./image/banch_of_stars.jpg" alt="Фотография звездного неба" />
                         <div class="element__text-like">
-                            <p class="element__text">Млечный путь</p>
-                            <button type="button" class="element__like element__like_active"></button>
+                            <h2 class="element__text">Млечный путь</h2>
+                            <button type="button" class="element__like"></button>
                         </div>
                     </article>
                     <article class="element">
                         <img class="element__image" src="./image/elbrus.jpg" alt="Фотография гора Эльбрус на закате" />
                         <div class="element__text-like">
-                            <p class="element__text">Гора Эльбрус</p>
-                            <button type="button" class="element__like element__like_active"></button>
+                            <h2 class="element__text">Гора Эльбрус</h2>
+                            <button type="button" class="element__like"></button>
                         </div>
                     </article>
                     <article class="element">
                         <img class="element__image" src="./image/tree.jpg" alt="Фотография дерева у воды на восходе" />
                         <div class="element__text-like">
-                            <p class="element__text">Дерево у воды</p>
-                            <button type="button" class="element__like element__like_active"></button>
+                            <h2 class="element__text">Дерево у воды</h2>
+                            <button type="button" class="element__like"></button>
                         </div>
                     </article>
                     <article class="element">
                         <img class="element__image" src="./image/sunset.jpg" alt="Фотография заката" />
                         <div class="element__text-like">
-                            <p class="element__text">Закат</p>
-                            <button type="button" class="element__like element__like_active"></button>
+                            <h2 class="element__text">Закат</h2>
+                            <button type="button" class="element__like"></button>
                         </div>
                     </article>
                 </section>
@@ -69,15 +69,17 @@
             <footer class="footer">
                 <p class="footer__author">&copy; 2023 Вильдана Разумова</p>
             </footer>
-            <form class="popup" id="form">
+            <div class="popup">
                 <div class="popup__container">
-                    <img class="popup__close-image" src="./image/popup__close.png" alt="крестик для закрытия всплывающего окна" />
+                    <button class="popup__close-image" type="button"></button>
                     <h2 class="popup__name">Редактировать профиль</h2>
-                    <input class="popup__item popup__item_name" placeholder="Имя Фамилия" type="text" id="name" required />
-                    <input class="popup__item popup__item_about" placeholder="Обо мне" type="text" id="about" required />
-                    <button class="popup__button popup__button_save" type="submit">Сохранить</button>
+                    <form name="form__popup" class="popup__form">
+                      <input class="popup__item popup__item_type_name" name="name__popup" placeholder="Имя Фамилия" type="text" id="name" required />
+                      <input class="popup__item popup__item_type_about" name="about__popup" placeholder="Обо мне" type="text" id="about" required />
+                      <button class="popup__button popup__button_type_save" name="button__save__popup" type="submit">Сохранить</button>
+                    </form>
                 </div>
-            </form>
+              </div>
         </div>
         <script src="./scripts/index.js"></script>
     </body>

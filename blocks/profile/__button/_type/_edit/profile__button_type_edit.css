@@ -1,26 +1,20 @@
-.profile__button_edit {
-  background-image: url(../../../../image/Edit\ Button.png);
+.profile__button_type_edit {
+  background-image: url(../../../../../image/Edit\ Button.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: black;
   width: 24px;
   height: 24px;
-  margin: 37px 0 0 18px;
-  border: none;
-  transition: 0.4s;
-  padding: 0;
+  margin: 37px 0 22px 18px;
   grid-column: 2;
   grid-row: 1;
-
-}
-
-.profile__button_edit:hover {
-  opacity: 0.6;
+  align-self: flex-end;
+  cursor: pointer;
 
 }
 
 @media screen and (max-width: 1024px) {
-  .profile__button_edit {
+  .profile__button_type_edit {
     width: 20px;
     height: 20px;
     justify-self: flex-end;
@@ -29,20 +23,19 @@
 }
 
 @media screen and (max-width: 800px) {
-  .profile__button_edit {
+  .profile__button_type_edit {
     grid-row: 1;
     grid-column: 4;
-
   }
 }
 
 @media screen and (max-width: 600px) {
-  .profile__button_edit {
+  .profile__button_type_edit {
     width: 18px;
     height: 18px;
     grid-row: 1;
     grid-column: 2;
-    margin: 30.25px 19px 0 10px;
+    margin: 0 19px 18px 10px;
 
 
   }

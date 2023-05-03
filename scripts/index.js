@@ -1,46 +1,37 @@
 // Открыть попап через иконку с карандашом, закрыть попап через крестик
 
-const popupButtonOpen = document.querySelector('.profile__button_edit');
+const popupButtonOpen = document.querySelector('.profile__button_type_edit');
 const popup = document.querySelector('.popup');
 const poopupButtonClosed = document.querySelector('.popup__close-image');
-const poopupButtonSave = document.querySelector('.popup__button_save');
+const poopupButtonSave = document.querySelector('.popup__button_type_save');
+const profileName = document.querySelector('.profile__section-title');
+const profileAbout = document.querySelector('.profile__section-subtitle');
+const popupForm = document.querySelector('.popup__form');
+const nameInput = document.querySelector('.popup__item_type_name');
+const jobInput = document.querySelector('.popup__item_type_about');
 
-const togglePopupState = (popupToToggle) => popupToToggle.classList.toggle('popup__popup_opened')
+// Открытие по клику на кнопку
+popupButtonOpen.addEventListener('click', () =>
+popup.classList.add('popup_opened'),
+nameInput.value = profileName.textContent,
+jobInput.value = profileAbout.textContent);
 
-popupButtonOpen.addEventListener('click', () => togglePopupState(popup));
-poopupButtonClosed.addEventListener('click', () => togglePopupState(popup));
-poopupButtonSave.addEventListener('click', () => togglePopupState(popup));
+// Закрытие по клику на крестик\сохранить
+poopupButtonClosed.addEventListener('click', () =>
+popup.classList.remove('popup_opened'));
 
-const profileName = document.querySelector('.section-title');
-const profileAbout = document.querySelector('.section-subtitle');
+poopupButtonSave.addEventListener('click', () =>
+popup.classList.remove('popup_opened'));
 
 
-// Находим форму в DOM
-let formElement = document.querySelector('.popup');
-// Находим поля формы в DOM
-let nameInput = document.querySelector('.popup__item_name');
-let jobInput = document.querySelector('.popup__item_about');
-
-// Обработчик «отправки» формы, хотя пока
-// она никуда отправляться не будет
+// // Обработчик «отправки» формы, хотя пока
+// // она никуда отправляться не будет
 function handleFormSubmit (evt) {
-    evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
-                                                // Так мы можем определить свою логику отправки.
-                                                // О том, как это делать, расскажем позже.
+    evt.preventDefault();
+//    // Получите значение полей jobInput и nameInput из свойства value
+   profileName.textContent = nameInput.value;
+   profileAbout.textContent = jobInput.value;
 
-    // Получите значение полей jobInput и nameInput из свойства value
-    let nameInput = document.querySelector('.popup__item_name').value;
-    let aboutInput = document.querySelector('.popup__item_about').value;
-
-    // Выберите элементы, куда должны быть вставлены значения полей
-    document.querySelector('.section-title').innerHTML = nameInput;
-    document.querySelector('.section-subtitle').innerHTML = aboutInput;
-
-    // Вставьте новые значения с помощью textContent
-    nameInput = profileName.textContent;
-    aboutInput = profileAbout.textContent;
 }
 
-// Прикрепляем обработчик к форме:
-// он будет следить за событием “submit” - «отправка»
-formElement.addEventListener('submit', handleFormSubmit);
+popupForm.addEventListener('submit', handleFormSubmit);
