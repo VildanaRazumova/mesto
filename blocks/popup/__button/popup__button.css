@@ -4,6 +4,25 @@
   height: 50px;
   margin: 0;
   border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 99999;
+  padding: 0;
+  margin: 0 0 auto;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.4s;
+  align-self: center;
+}
+
+
+.popup__button:hover {
+  opacity: 0.8;
+
 }
 
 
@@ -13,5 +32,7 @@
     height: 46px;
     top: 251px;
     left: 22px;
+    font-size: 14px;
+    line-height: 17px;
   }
 }

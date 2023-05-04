@@ -2,8 +2,7 @@
 
 const popupButtonOpen = document.querySelector('.profile__button_type_edit');
 const popup = document.querySelector('.popup');
-const poopupButtonClosed = document.querySelector('.popup__close-image');
-const poopupButtonSave = document.querySelector('.popup__button_type_save');
+const poopupButtonClosed = document.querySelector('.popup__close-button');
 const profileName = document.querySelector('.profile__section-title');
 const profileAbout = document.querySelector('.profile__section-subtitle');
 const popupForm = document.querySelector('.popup__form');
@@ -20,10 +19,6 @@ jobInput.value = profileAbout.textContent);
 poopupButtonClosed.addEventListener('click', () =>
 popup.classList.remove('popup_opened'));
 
-poopupButtonSave.addEventListener('click', () =>
-popup.classList.remove('popup_opened'));
-
-
 // // Обработчик «отправки» формы, хотя пока
 // // она никуда отправляться не будет
 function handleFormSubmit (evt) {
@@ -31,6 +26,7 @@ function handleFormSubmit (evt) {
 //    // Получите значение полей jobInput и nameInput из свойства value
    profileName.textContent = nameInput.value;
    profileAbout.textContent = jobInput.value;
+   popup.classList.remove('popup_opened');
 
 }
 
