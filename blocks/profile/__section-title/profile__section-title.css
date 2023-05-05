@@ -18,8 +18,8 @@
 
 @media screen and (max-width: 900px) {
   .profile__section-title {
-   min-width: 250px;
    font-size: 32px;
+   min-width: 200px;
    grid-row: 1;
    grid-column: 2;
 
